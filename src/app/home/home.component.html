@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<app-components></app-components>
+<app-counting></app-counting>
+<div class="row mt-3 mx-auto">
+    <div class="col-md-2"></div>
+    <div *ngFor="let lecturer of lecturers" class="col-md-1">
+      <img class="avatar" [src]="(lecturer == showingLecturer) ? 'assets/user-shape-select.png' : 'assets/user-shape.png'" (click)="showLecturer(lecturer)">
+    </div>
+</div>
+<div class="container">
+  <div class="profile">
+    <img align="left" class="bgb" [src]="backgroundimage" alt="Profile image example"/>
+    <img align="left" class="img-thumbnail image-profile thumbnail" [src]="showingLecturer.imageurl" alt="Profile image example"/>
+    <div class="profile-text">
+      <h1>{{ showingLecturer.fullname }}</h1>
+      <p>{{ showingLecturer.email }}</p>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
+
+
+
