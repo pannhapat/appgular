@@ -9,7 +9,9 @@ import { CountingComponent } from './components/counting/counting.component';
 import { LabspaceComponent } from './labspace/labspace.component';
 import { Lab4Component } from './labspace/lab4/lab4.component';
 import { HomeComponent } from './home/home.component';
-
+import { SearchComponent } from './components/navbar/search/search.component';
+import { TopbannerComponent } from './components/topbanner/topbanner.component';
+import { CategorymenuComponent } from './components/categorymenu/categorymenu.component';
 
 
 @NgModule({
@@ -21,11 +23,14 @@ import { HomeComponent } from './home/home.component';
     CountingComponent,
     LabspaceComponent,
     Lab4Component,
-    HomeComponent
+    HomeComponent,
+    SearchComponent,
+    TopbannerComponent,
+    CategorymenuComponent
   ],
   imports: [
     BrowserModule
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]

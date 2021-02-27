@@ -5,16 +5,15 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './lab4.component.html',
   styleUrls: ['./lab4.component.css']
 })
+
+
 export class Lab4Component implements OnInit {
 
   constructor() { }
-  currentItem = { name: 'teapot'} ;
-  arraylab4 = new Array(10);
 
-  array1 = new Array(1, 2, 3);
-
-
-
+  forLoopArray(elements: number): Array<any> {
+    return new Array(elements);
+  }
 
   ngOnInit(): void {
   }

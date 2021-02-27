@@ -1,0 +1,19 @@
+<div class="spacetop">
+<hr class="alert-danger">
+
+<div class="row mt-2 mx-auto">
+    <div class="col-md-1 "></div>
+    <div *ngFor="let category of categories" class="col-md-1">
+      <img class="card-img" [src]="category.imageurl" (click)="showCategory(category)">
+    </div>
+</div>
+
+  <div class="profile">
+    <div class="profile-text text-center">
+      <h1>{{ showingCategory.name }}</h1>
+       <img class="img-category" [src]="showingCategory.imageurl" >
+    </div>
+  </div>
+
+<hr class="alert-danger">
+</div>

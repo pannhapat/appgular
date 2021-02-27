@@ -4,6 +4,10 @@
   height: 50px;
   border-radius: 50%;
 }
+
+.spacetop{
+  margin-top: 10px;
+}
 .bgb {
   vertical-align: middle;
   width: 100%;
