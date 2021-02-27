@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './components/navbar/search/search.component';
 import { TopbannerComponent } from './components/topbanner/topbanner.component';
 import { CategorymenuComponent } from './components/categorymenu/categorymenu.component';
+import { TodolistComponent } from './labspace/todolist/todolist.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { CategorymenuComponent } from './components/categorymenu/categorymenu.co
     HomeComponent,
     SearchComponent,
     TopbannerComponent,
-    CategorymenuComponent
+    CategorymenuComponent,
+    TodolistComponent
   ],
   imports: [
     BrowserModule
