@@ -1,9 +1,7 @@
 <div class="space50">
 <p>
-  Today's item: {{item}}
-  <input #newItem>
+  Today's item: {{item}} <input #newItem>
   <button class="btn btn-info" (click)="addNewItem(newItem.value)">เพิ่ม Todo Task</button>
-
 </p>
 <p  *ngFor="let item of items; index as i;"> {{item}}  <button class="btn btn-danger" (click)="deleteItem(i)"> <i class="fa fa-trash"></i></button></p>
 <div>
