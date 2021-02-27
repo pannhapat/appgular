@@ -1,7 +1,6 @@
 import { Component ,Input,Output, EventEmitter } from '@angular/core';
 
 
-
 interface ITask {
   name?: string;
 }
@@ -37,7 +36,7 @@ export class TodolistComponent  {
     const index: number = this.items.indexOf(task);
     if (index !== -1) {
       this.items.splice(index, 1);
-  }
+    }
 
   }
 
