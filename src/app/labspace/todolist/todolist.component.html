@@ -1,7 +1,14 @@
-<div class="space50">
-<p>
-  Today's item: {{item}} <input #newItem>
-  <button class="btn btn-info" (click)="addNewItem(newItem.value)">เพิ่ม Todo Task</button>
-</p>
-<p  *ngFor="let item of items; index as i;"> {{item}}  <button class="btn btn-danger" (click)="deleteItem(i)"> <i class="fa fa-trash"></i></button></p>
+<div class="space50 text-center">
+<h2>Task Todo</h2>
+<div class="row">
+  <div class ="col-md">
+    My Task Today's :
+    <p  *ngFor="let task of items; index as i;"> {{task.name}}  <button class="btn btn-danger" (click)="deleteItem(task)"> <i class="fa fa-trash"></i></button></p>
+  </div>
+  <div class ="col-md">
+     Task  : <input #newItem>
+     <br>
+    <button class="btn btn-info" (click)="addNewItem({name:newItem.value})">เพิ่ม Todo Task</button>
+  </div>
+</div>
 <div>
