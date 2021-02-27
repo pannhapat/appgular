@@ -12,7 +12,6 @@ interface ITask {
   styleUrls: ['./todolist.component.css']
 })
 export class TodolistComponent  {
-  // items = ['Task 1', 'Task 2', 'Task 3', 'Task 4'];
 
   items: ITask[] = [{ name: "Task 1" }, { name: "Task 2" }, { name: "Task 3" }, {name:"Task 4"}];
 
