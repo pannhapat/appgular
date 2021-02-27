@@ -39,10 +39,6 @@ export class TodolistComponent  {
       this.items.splice(index, 1);
   }
 
-
-
-    // this.items.splice(task, 1);
-
   }
 
 
