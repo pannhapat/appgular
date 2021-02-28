@@ -16,6 +16,7 @@ import { TodolistComponent } from './labspace/todolist/todolist.component';
 import { ProductComponent } from './product/product.component';
 import { ProductlistComponent } from './product/productlist/productlist.component';
 import { ProductitemComponent } from './product/productlist/productitem/productitem.component';
+import { PreferenceComponent } from './preference/preference.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { ProductitemComponent } from './product/productlist/productitem/producti
     TodolistComponent,
     ProductComponent,
     ProductlistComponent,
-    ProductitemComponent
+    ProductitemComponent,
+    PreferenceComponent
   ],
   imports: [
     BrowserModule
