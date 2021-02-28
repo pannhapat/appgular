@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  homeTitleValue = 'set appgular';
+  title = 'set appgular';
 
 
   constructor() { }
