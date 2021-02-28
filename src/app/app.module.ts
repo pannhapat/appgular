@@ -13,6 +13,9 @@ import { SearchComponent } from './components/navbar/search/search.component';
 import { TopbannerComponent } from './components/topbanner/topbanner.component';
 import { CategorymenuComponent } from './components/categorymenu/categorymenu.component';
 import { TodolistComponent } from './labspace/todolist/todolist.component';
+import { ProductComponent } from './product/product.component';
+import { ProductlistComponent } from './product/productlist/productlist.component';
+import { ProductitemComponent } from './product/productlist/productitem/productitem.component';
 
 
 @NgModule({
@@ -28,7 +31,10 @@ import { TodolistComponent } from './labspace/todolist/todolist.component';
     SearchComponent,
     TopbannerComponent,
     CategorymenuComponent,
-    TodolistComponent
+    TodolistComponent,
+    ProductComponent,
+    ProductlistComponent,
+    ProductitemComponent
   ],
   imports: [
     BrowserModule

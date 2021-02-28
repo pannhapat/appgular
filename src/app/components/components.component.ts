@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class ComponentsComponent implements OnInit {
 
   constructor() { }
-  name:string = 'Pannhapat';
+  name = 'Pannhapat';
   actionvoid(): void{
     alert('hello' + this.name);
   }

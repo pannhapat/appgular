@@ -8,12 +8,12 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'appgular';
+  homeTitleValue = 'set appgular';
 
 
-    constructor() { }
+  constructor() { }
 
-    ngOnInit() {
-    }
+ngOnInit() {
+}
 
 }
