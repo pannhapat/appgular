@@ -17,6 +17,7 @@ import { ProductComponent } from './product/product.component';
 import { ProductlistComponent } from './product/productlist/productlist.component';
 import { ProductitemComponent } from './product/productlist/productitem/productitem.component';
 import { PreferenceComponent } from './preference/preference.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { PreferenceComponent } from './preference/preference.component';
     ProductComponent,
     ProductlistComponent,
     ProductitemComponent,
-    PreferenceComponent
+    PreferenceComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule
