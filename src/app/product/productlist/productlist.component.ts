@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , Output, EventEmitter} from '@angular/core';
+import { Products } from '../../models/products';
+import { IProduct } from '../../models/iproduct';
 
 @Component({
   selector: 'app-productlist',
@@ -7,9 +9,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductlistComponent implements OnInit {
 
+  product: Products = new Products();
+
+  productList: Products[] = [
+    {
+      name: 'ส้มโอ',
+      price: 990
+    },
+    {
+      name: 'แตงโม',
+      price: 1000
+    },
+    {
+      name: 'มะพร้าวน้ำหอม',
+      price: 500
+    },
+
+  ];
+
+
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+  showProduct(product: Products) {
+    alert("ชื่อสินค้า :" + product.name + "ราคา :"+ product.price );
   }
-
+  deleteProduct(product: Products) {
+    alert("ชื่อสินค้า :" + product.name + "ราคา :"+ product.price );
+  }
 }
