@@ -1,15 +1,9 @@
 <h2> Product </h2>
 <div class="row">
-  <div *ngFor="let product of productList"  class="col-md-4">
-    <div   class="card border-primary mb-2" >
-      <div class="card-body">
-        <h5 class="card-title">{{product.name}}</h5>
-        <p class="card-text">ราคา : {{product.price}} บาท </p>
-      </div>
-      <div class="card-body">
-          <button (click)="showProduct(product)" class="btn btn-primary">เลือกสินค้า</button>
-      </div>
-    </div>
-  </div>
+<div *ngFor="let product of productList" class="col-md-3 ">
+<app-productitem [product]="product" ></app-productitem>
 </div>
+</div>
+
+
 

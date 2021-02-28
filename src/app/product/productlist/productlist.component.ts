@@ -30,11 +30,6 @@ export class ProductlistComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {}
-  showProduct(product: Products) {
-    alert("ชื่อสินค้า :" + product.name + "ราคา :"+ product.price );
-  }
-  deleteProduct(product: Products) {
-    alert("ชื่อสินค้า :" + product.name + "ราคา :"+ product.price );
-  }
+  ngOnInit(): void { }
+
 }

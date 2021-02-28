@@ -1,4 +1,10 @@
-<div  class="card">
-  <h3>{{product.name}}</h3>
-  <span> ราคา : {{product.price}} บาท </span>
+<div class="card border-primary" >
+  <div class="card-body">
+    <h5 class="card-title">{{product.name}}</h5>
+    <p class="card-text">ราคา : {{product.price}} บาท </p>
+  </div>
+  <div class="card-body">
+      <button (click)="showProduct(product)" class="btn btn-primary">เลือกสินค้า</button>
+  </div>
 </div>
+

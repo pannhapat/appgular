@@ -18,6 +18,7 @@ import { ProductlistComponent } from './product/productlist/productlist.componen
 import { ProductitemComponent } from './product/productlist/productitem/productitem.component';
 import { PreferenceComponent } from './preference/preference.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { CatalogComponent } from './catalog/catalog.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     ProductlistComponent,
     ProductitemComponent,
     PreferenceComponent,
-    DashboardComponent
+    DashboardComponent,
+    CatalogComponent
   ],
   imports: [
     BrowserModule

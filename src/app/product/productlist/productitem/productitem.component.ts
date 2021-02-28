@@ -9,8 +9,14 @@ import { IProduct } from '../../../models/iproduct';
 })
 export class ProductitemComponent implements OnInit {
 
-  product: Products = new Products();
+  @Input() product!: Products;
 
+  showProduct(product: Products) {
+    alert("ชื่อสินค้า :" + product.name + "ราคา :"+ product.price );
+  }
+  deleteProduct(product: Products) {
+    alert("ชื่อสินค้า :" + product.name + "ราคา :"+ product.price );
+  }
 
   @Output()
   OnSelected: EventEmitter<Products> = new EventEmitter();
