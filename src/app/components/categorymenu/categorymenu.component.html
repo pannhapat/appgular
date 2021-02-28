@@ -1,12 +1,14 @@
-<div class="spacetop">
+<div class="spacetop text-center">
 
 <hr class="alert-danger">
 <h2 class="text-center"> Categories Menu</h2>
-<div class="row mt-2 mx-auto">
-    <div class="col-md-1 "></div>
-    <div *ngFor="let category of categories" class="col-md-1">
-      <img class="card-img" [src]="category.imageurl" (click)="showCategory(category)">
+<div class="row">
+    <div *ngFor="let category of categories" class="col-sm-1 ">
+      <div  class="card">
+        <img class="card-img  img-thumbnail" [src]="category.imageurl" (click)="showCategory(category)">
+      </div>
     </div>
+
 </div>
 
   <div class="profile">
