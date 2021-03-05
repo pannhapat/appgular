@@ -20,6 +20,14 @@ export class ProductitemComponent implements OnInit {
 
   @Output()
   OnSelected: EventEmitter<Products> = new EventEmitter();
+
+
+
+
+
+
+
+
   // @Output() newProductEvent = new EventEmitter<Products>();
   // @Output() deleteProductEvent = new EventEmitter<Products>();
   // @Output() showProductEvent = new EventEmitter<Products>();

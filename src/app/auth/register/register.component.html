@@ -1,0 +1,34 @@
+<form [formGroup]='form'>
+  <div>
+    <div> email</div>
+    <input formControlName="email">
+  </div>
+  <div>
+    <div> Password</div>
+    <input formControlName="password">
+  </div>
+  <div>
+    <div> Confirm Password</div>
+    <input formControlName="confirmpassword">
+  </div>
+  <div>
+    <div> First Name</div>
+    <input formControlName="firstname">
+  </div>
+  <div>
+      <div> Last Name</div>
+    <input formControlName="lastname">
+  </div>
+  <div>
+    <div> About</div>
+      <input formControlName="about">
+  </div>
+  <div>
+      <button> Register </button>
+  </div>
+</form>
+<p>Form Data Below</p>
+<code>
+{{form.value | json}}
+</code>
+

@@ -19,7 +19,30 @@ import { ProductitemComponent } from './product/productlist/productitem/producti
 import { PreferenceComponent } from './preference/preference.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CatalogComponent } from './catalog/catalog.component';
+import { Homework1Component } from './labspace/homework1/homework1.component';
+import { ItemDirective } from './item.directive';
+import { Routes } from '@angular/router';
+import { AuthComponent } from './auth/auth.component';
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+
+const routes: Routes = [
+  {
+    path: 'home',
+    component: HomeComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
+  },
+  {
+    path: 'register',
+    component: RegisterComponent
+  },
+
+]
 
 @NgModule({
   declarations: [
@@ -40,10 +63,17 @@ import { CatalogComponent } from './catalog/catalog.component';
     ProductitemComponent,
     PreferenceComponent,
     DashboardComponent,
-    CatalogComponent
+    CatalogComponent,
+    Homework1Component,
+    ItemDirective,
+    AuthComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule
 
   ],
   providers: [],
